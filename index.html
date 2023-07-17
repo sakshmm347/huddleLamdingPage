@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        background-image: linear-gradient(
+            270deg,
+            hsla(300, 90%, 23%, 0.598),
+            hsla(257, 90%, 27%, 0.831)
+          ),
+          url(images/bg-desktop.svg);
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+        width: 1300px;
+        margin: 20px auto;
+        margin-top: 4rem;
+      }
+      .left-container {
+        width: 50%;
+        transform: scale(0.9);
+        /* transform: translateY(20%); */
+      }
+      .right-container {
+        transform: translateY(-50px);
+        width: 40%;
+        padding: 20px;
+      }
+      h1 {
+        margin-bottom: 25px;
+        line-height: 1.2;
+        color: white;
+        font-size: 40px;
+      }
+      button {
+        padding: 15px 50px;
+        background-color: white;
+        border-radius: 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: hsl(257, 40%, 49%);
+        color: white;
+      }
+      p {
+        font-size: 18px;
+        margin: 20px 0;
+        color: white;
+      }
+      .img-logo {
+        width: 200px;
+        margin-top: 2rem;
+        margin-left: 5.6rem;
+      }
+      ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        align-items: end;
+        justify-content: end;
+        margin-right: 100px;
+      }
+      li {
+        transition: 0.3s;
+        padding: 10px 12px;
+        border-radius: 50%;
+      }
+      li:hover {
+        cursor: pointer;
+        background-color: white;
+        transform: scale(1.2);
+      }
+      @media screen and (max-width: 600px) {
+        body {
+          background-image: linear-gradient(
+              270deg,
+              hsla(300, 90%, 23%, 0.598),
+              hsla(257, 90%, 27%, 0.831)
+            ),
+            url(images/bg-mobile.svg);
+        }
+        .container {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 6rem;
+          width: 600px;
+          margin: 10px auto;
+          margin-top: 4rem;
+        }
+        .left-container {
+          width: 500px;
+          margin: 0 auto;
+        }
+        .left-container img {
+          width: 60%;
+
+          /* transform: translateY(20%); */
+        }
+        .right-container {
+          /* transform: translateY(-50px); */
+          width: 500px;
+          margin: 0 auto;
+        }
+        .inner-right {
+          width: 60%;
+        }
+        h1 {
+          margin-bottom: 25px;
+          line-height: 1.2;
+          color: white;
+          font-size: 40px;
+        }
+        p {
+          font-size: 18px;
+          margin-bottom: 25px;
+          line-height: 1.5;
+
+          /* margin: px 0; */
+          color: white;
+        }
+        button {
+          padding: 15px 50px;
+          background-color: white;
+          border-radius: 40px;
+          border: none;
+          cursor: pointer;
+          font-size: 15px;
+          transition: 0.5s;
+          transform: translateX(50px);
+          margin-top: 25px;
+        }
+        .img-logo {
+          width: 200px;
+          margin-top: 2rem;
+          margin-left: 5.6rem;
+        }
+        ul {
+          display: flex;
+          gap: 25px;
+          list-style: none;
+          align-items: end;
+          justify-content: end;
+          margin-right: 100px;
+        }
+        li {
+          transition: 0.3s;
+          padding: 10px 12px;
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div><img src="images/logo.svg" alt="" class="img-logo" /></div>
+    <div class="container">
+      <div class="left-container">
+        <img src="images/illustration-mockups.svg" alt="" />
+      </div>
+      <div class="right-container">
+        <div class="inner-right">
+          <h1>Build The Community Your Fans Will Love</h1>
+
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion. Register
+          </p>
+        </div>
+        <button>Register</button>
+      </div>
+    </div>
+    <footer>
+      <div class="foot">
+        <ul>
+          <li><img src="instagram (2).png" alt="" width="25px" /></li>
+          <li><img src="facebook (1).png" alt="" width="25px" /></li>
+          <li><img src="twitter (1).png" alt="" width="25px" /></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
